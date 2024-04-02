@@ -24,7 +24,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header container">
         <a class="header__logo" href="./index.html">
             <img src="./images/Logo.png" alt="Logo">
         </a>
@@ -37,6 +37,11 @@
                 <li class="nav__link">Contacts</li>
             </ul>
         </nav>
+        <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+            <svg class="toggle__icon" width="40" height="40">
+                <use href="./images/icon_sprite.svg#icon-menu"></use>
+            </svg>
+        </button>
     </header>
 
     <!-- Hero -->
@@ -177,5 +182,40 @@
         <p class="footer__text">© All Rights Reserved</p>
 
     </footer>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu js-menu-container" >
+        <div class="mobile-menu__header container">
+            <a class="header__logo" href="./index.html">
+                <img src="./images/Logo.png" alt="Logo">
+            </a>
+            <button class="menu__toggle js-close-menu">
+                <svg class="toggle__icon" width="40" height="40">
+                    <use href="./images/icon_sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__list-item">
+                <a class="mobile-menu__link js-close-menu-link1" href="#aboutUs">About us</a>
+            </li>
+            <li class="mobile-menu__list-item">
+                <a class="mobile-menu__link js-close-menu-link2" href="#ourTours">Tours</a>
+            </li>
+            <li class="mobile-menu__list-item">
+                <a class="mobile-menu__link js-close-menu-link3" href="#gallery">Gallery</a>
+            </li>
+            <li class="mobile-menu__list-item">
+                <a class="mobile-menu__link js-close-menu-link4" href="#contacts">Contacts</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- Script -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>

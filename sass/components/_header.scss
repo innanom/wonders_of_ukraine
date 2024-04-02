@@ -1,16 +1,18 @@
 .header {
     display: flex;
-    align-items: baseline;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
 }
 .nav__list {
-    
+    display: none;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
         display: flex;
         gap: 32px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: $desktop) {
         gap: 64px;
     }
 
