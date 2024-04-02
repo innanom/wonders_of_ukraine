@@ -78,4 +78,27 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+@media (min-width: 768px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  .nav__list {
+    gap: 64px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    align-items: baseline;
+}
+.nav__list {
+    
+
+    @media (min-width: 768px) {
+        display: flex;
+        gap: 32px;
+    }
+
+    @media (min-width: 1440px) {
+        gap: 64px;
+    }
+
+}
