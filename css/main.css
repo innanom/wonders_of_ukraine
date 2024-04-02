@@ -136,6 +136,12 @@ button {
   }
 }
 
+.nav__link {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1, 40;
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
