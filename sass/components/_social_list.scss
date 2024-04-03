@@ -1,8 +1,18 @@
 .social__list {
     display: flex;
     gap: 15px;
+
+
 }
 .social__icon {
     height: 24px;
     fill: var(--main-color);
+
+    transition: var(--anima-fast);
+            
+        &:hover,
+        &:focus {
+            border: 1px solid var(--main-color);
+            background: var(--background-color);
+        }
 }

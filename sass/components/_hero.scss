@@ -1,14 +1,94 @@
 .hero {
-   background-image: url('../images/hero-img.jpg');
-   
+        position: relative;
+        padding-top: 199px;
+        padding-bottom: 32px;
+        
+        background-image: url('../images/hero-img.jpg');
+        text-align: center;
     
-    
-        // max-width: 1440px;
-        // margin-left: auto;
-        // margin-right: auto;
-
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+
+        @media (min-width: $tablet) {
+                padding-bottom: 64px;
+        }
+
+        @media (min-width: $desktop) {
+                padding-bottom: 100px;
+        }
    
 }
+
+.hero__title {
+        
+        margin-bottom: 86px;
+
+        font-family: var(--second-font);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.4;
+
+        @media (min-width: $tablet) {
+              font-size: 48px;   
+        }
+}
+
+.hero__title--part {
+        position: relative;
+        font-size: 64px;
+
+        @media (min-width: $tablet) {
+                font-size: 128px;
+        }
+}
+
+.hero__title--part::after {
+        content: 'Ukraine';
+        position: absolute;
+        left: 0;
+        transform-origin: bottom;
+        transform: rotateX(180deg);
+        line-height: 1em;
+        background: linear-gradient(15deg, #fff -54.67%, rgba(255, 255, 255, 0) 58.38%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.hero__btn {
+        padding-top: 12px;
+        padding: 12px 52px;
+        border-radius: 4px;
+        background: var(--btn-color);
+
+        font-family: var(--second-font);
+        line-height: 1.4;
+        letter-spacing: 0.16px;
+
+        transition: var(--anima-fast);
+
+        &:hover, 
+        &:focus {
+                border: 1px solid var(--main-color);
+                background: var(--background-color);
+        }
+
+        @media (min-width: $tablet) {
+                padding-top: 16px;
+        }
+       
+}
+
+.hero__social__list {
+        justify-content: center;
+        margin-top: 225px;
+
+        @media (min-width: $tablet) {
+                        flex-direction: column;
+                        align-items: end;
+                        margin-right: 31px;
+        
+                }
+}
+

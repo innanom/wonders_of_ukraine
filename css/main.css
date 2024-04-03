@@ -1,9 +1,10 @@
 :root {
   --main-color: #FFFFFF;
   --background-color: #141A19;
+  --btn-color: #394014;
   /* Fonts */
   --main-font: Lato;
-  --title-font: Jomolhari;
+  --second-font: Jomolhari;
   --anima-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -107,6 +108,8 @@ button {
 }
 
 .header {
+  position: absolute;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,6 +120,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 16px;
+  z-index: 999;
 }
 
 .nav__list {
@@ -142,11 +146,111 @@ button {
   line-height: 1, 40;
 }
 
+.nav__link-item {
+  -webkit-transition: var(--anima-fast);
+  transition: var(--anima-fast);
+}
+.nav__link-item:hover, .nav__link-item:focus {
+  font-size: 30px;
+}
+
 .hero {
+  position: relative;
+  padding-top: 199px;
+  padding-bottom: 32px;
   background-image: url("../images/hero-img.jpg");
+  text-align: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (min-width: 835px) {
+  .hero {
+    padding-bottom: 64px;
+  }
+}
+@media (min-width: 1440px) {
+  .hero {
+    padding-bottom: 100px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 86px;
+  font-family: var(--second-font);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+@media (min-width: 835px) {
+  .hero__title {
+    font-size: 48px;
+  }
+}
+
+.hero__title--part {
+  position: relative;
+  font-size: 64px;
+}
+@media (min-width: 835px) {
+  .hero__title--part {
+    font-size: 128px;
+  }
+}
+
+.hero__title--part::after {
+  content: "Ukraine";
+  position: absolute;
+  left: 0;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  line-height: 1em;
+  background: linear-gradient(15deg, #fff -54.67%, rgba(255, 255, 255, 0) 58.38%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__btn {
+  padding-top: 12px;
+  padding: 12px 52px;
+  border-radius: 4px;
+  background: var(--btn-color);
+  font-family: var(--second-font);
+  line-height: 1.4;
+  letter-spacing: 0.16px;
+  -webkit-transition: var(--anima-fast);
+  transition: var(--anima-fast);
+}
+.hero__btn:hover, .hero__btn:focus {
+  border: 1px solid var(--main-color);
+  background: var(--background-color);
+}
+@media (min-width: 835px) {
+  .hero__btn {
+    padding-top: 16px;
+  }
+}
+
+.hero__social__list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 225px;
+}
+@media (min-width: 835px) {
+  .hero__social__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    margin-right: 31px;
+  }
 }
 
 .mobile-menu {
@@ -179,6 +283,7 @@ button {
 }
 
 .mobile-menu__header {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,4 +341,10 @@ button {
 .social__icon {
   height: 24px;
   fill: var(--main-color);
+  -webkit-transition: var(--anima-fast);
+  transition: var(--anima-fast);
+}
+.social__icon:hover, .social__icon:focus {
+  border: 1px solid var(--main-color);
+  background: var(--background-color);
 }/*# sourceMappingURL=main.css.map */
