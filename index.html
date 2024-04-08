@@ -21,6 +21,10 @@
 
         <!-- Custom styles -->
         <link rel="stylesheet" href="./css/main.min.css " />
+
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <body>
     <!-- Header -->
@@ -115,6 +119,45 @@
     <!-- Gallery -->
     <section class="gallery" id="gallery">
         <h2 class="gallery__title">Gallery</h2>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./images/Gallery/gallery-1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/Gallery/gallery-2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/Gallery/gallery-3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/Gallery/gallery-4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/Gallery/gallery-5.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/Gallery/gallery-6.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/Gallery/gallery-7.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/Gallery/gallery-8.jpg" alt="">
+                </div>
+            </div>
+            <!-- If we need pagination
+            <div class="swiper-pagination"></div> -->
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
     </section>
 
     <!-- Reviews -->
@@ -231,5 +274,8 @@
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
     <script defer src="js/mobile-menu.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./js/gallery-slider.js"></script>
 </body>
 </html>
