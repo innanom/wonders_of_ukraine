@@ -306,6 +306,30 @@ button {
   }
 }
 
+.gallery {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.gallery__title {
+  text-align: center;
+  font-family: var(--second-font);
+  font-size: 40px;
+  line-height: 1.4;
+  letter-spacing: 0.4px;
+}
+
+.image__slider .swiper-pagination {
+  bottom: 0;
+}
+
+.image__slider .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  background-color: var(--main-color);
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
