@@ -155,7 +155,6 @@ button {
 }
 
 .hero {
-  position: relative;
   padding-top: 199px;
   padding-bottom: 32px;
   background-image: url("../images/hero-img.jpg");
@@ -184,6 +183,7 @@ button {
 }
 @media (min-width: 835px) {
   .hero__title {
+    margin-bottom: 80px;
     font-size: 48px;
   }
 }
@@ -202,6 +202,7 @@ button {
   content: "Ukraine";
   position: absolute;
   left: 0;
+  top: 55px;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
   -webkit-transform: rotateX(180deg);
@@ -214,6 +215,7 @@ button {
 }
 
 .hero__btn {
+  position: relative;
   padding-top: 12px;
   padding: 12px 52px;
   border-radius: 4px;
