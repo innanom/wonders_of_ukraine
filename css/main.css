@@ -22,6 +22,7 @@ html {
 }
 
 body {
+  height: 100%;
   font-family: var(--main-font), sans-serif;
   background-color: var(--background-color);
   color: var(--main-color);
@@ -305,10 +306,42 @@ button {
   }
 }
 
+.ourTours {
+  width: 100%;
+  padding-bottom: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ourTours__title {
+  font-family: var(--second-font);
+  font-size: 40px;
+  line-height: 1.4;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+
+.ourTours-slide {
+  width: 375px;
+  height: auto;
+}
+
+.ourTours__img {
+  text-align: center;
+}
+
+.ourTours__text {
+  font-family: var(--main-font);
+  line-height: 1.4;
+  letter-spacing: 0.16px;
+}
+
 .gallery {
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 112px;
+  min-height: 100%;
 }
 @media (min-width: 835px) {
   .gallery {
@@ -348,15 +381,6 @@ button {
 @media (min-width: 835px) {
   .gallery__img {
     width: 377px;
-  }
-}
-
-.swiper {
-  height: 526px;
-}
-@media (min-width: 835px) {
-  .swiper {
-    height: 558px;
   }
 }
 
