@@ -1,5 +1,4 @@
 .hero {
-        // position: relative;
         padding-top: 199px;
         padding-bottom: 32px;
         
@@ -25,7 +24,6 @@
 
         font-family: var(--second-font);
         font-size: 24px;
-        font-weight: 400;
         line-height: 1.4;
 
         @media (min-width: $tablet) {
@@ -88,10 +86,9 @@
         margin-top: 225px;
 
         @media (min-width: $tablet) {
-                        flex-direction: column;
-                        align-items: end;
-                        margin-right: 31px;
-        
-                }
+                flex-direction: column;
+                align-items: end;
+                margin-right: 31px;
+        }
 }
 

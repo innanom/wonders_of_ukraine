@@ -1,14 +1,19 @@
 .gallery {
     padding-left: 16px;
     padding-right: 16px;
-    margin-bottom: 112px;
+    padding-bottom: 112px;
 
    
 
         @media (min-width: $tablet) {
             padding-left: 32px;
             padding-right: 32px;
-            margin-bottom: 158px;
+            padding-bottom: 158px;
+        }
+
+        @media (min-width: $desktop) {
+            padding-right: 0;
+        
         }
 }
 
@@ -23,7 +28,6 @@
 
     @media (min-width: $tablet) {
         margin-bottom: 64px;
-        font-family: Jomolhari;
         font-size: 64px;
         letter-spacing: 0.64px;
     }
@@ -66,4 +70,8 @@
     height: 10px;
     line-height: 10px;
     background-color: var(--main-color);
+}
+
+.swiper .swiper-slide {
+    width: auto;
 }

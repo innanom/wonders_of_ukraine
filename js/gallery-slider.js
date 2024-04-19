@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
 
-  // If we need pagination
+  // Pagination
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -17,8 +17,9 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//   },
+  // Кількість слайдів
+  slidesPerView: 'auto',
+
+  // Відступ між слайдами
+  spaceBetween: 16,
 });
