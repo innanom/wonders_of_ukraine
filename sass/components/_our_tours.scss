@@ -33,7 +33,11 @@
 }
 
 .ourTours__text {
-    margin-bottom: 16px;font-family: var(--main-font);
+    margin-right: 0;
+    margin-bottom: 16px;
+    // padding-right: 16px;
+    // padding-left: 16px;
+    font-family: var(--main-font);
     line-height: 1.40;
     letter-spacing: 0.16px;
 
@@ -93,7 +97,7 @@
 }
 
 .ourTours__btn {
-    width: 311px;
+    width: 343px;
     
     padding-top: 16px;
     padding-bottom: 16px;

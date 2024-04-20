@@ -342,6 +342,7 @@ button {
 }
 
 .ourTours__text {
+  margin-right: 0;
   margin-bottom: 16px;
   font-family: var(--main-font);
   line-height: 1.4;
@@ -405,7 +406,7 @@ button {
 }
 
 .ourTours__btn {
-  width: 311px;
+  width: 343px;
   padding-top: 16px;
   padding-bottom: 16px;
   text-align: center;
