@@ -22,4 +22,23 @@ const swiper = new Swiper('.swiper', {
 
   // Відступ між слайдами
   spaceBetween: 16,
+
+  autoHeight: true,
+
+  breakpoints: {
+    // when window width is >= 320px
+    375: {
+      // slidesPerView: 1,
+    },
+    // when window width is >= 480px
+    835: {
+      // slidesPerView: 1,
+    
+    },
+    // when window width is >= 640px
+    1140: {
+      // slidesPerView: 2,
+   
+    }
+  }
 });
