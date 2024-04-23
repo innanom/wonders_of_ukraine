@@ -20,11 +20,17 @@
     width: 375px;
     height: 515px;
     margin-bottom: 16px;
+    border-radius: 4px;
     object-fit: cover;
 
     @media (min-width: $tablet) {
             width: 835px;
     
+        }
+
+        @media (min-width: $desktop) {
+            width: 704px;
+            margin-bottom: 106px;
         }
 
 }
@@ -46,8 +52,7 @@
 
 .tour{
     margin: auto;
-    // margin-bottom: 50px;
-
+    width: 100%;
 
 }
 
@@ -58,10 +63,17 @@
             margin-bottom: 40px;
     
     }
+         @media (min-width: $desktop) {
+             display: block;
+             margin-bottom: 50px;
+    
+         }
+
+
 }
 
 .ourTours__text {
-   margin-right: 0;
+    margin-right: 0;
     margin-bottom: 16px;
     padding-right: 16px;
     font-family: var(--main-font);
@@ -70,8 +82,13 @@
 
     @media (min-width: $tablet) {
         width: 496px;
+        padding-right: 32px;
         padding: 0;
     }
+
+        @media (min-width: $desktop) {
+            margin-bottom: 40px;
+        }
 
 }
 
@@ -105,6 +122,10 @@
     font-size: 18px;
     line-height: 1.4;
     letter-spacing: 0.18px;
+
+    @media (min-width: $tablet) {
+        margin-top: 32px;
+    }
 }
 
 .ourTours__includ-list {
@@ -133,7 +154,7 @@
 
 .ourTours__btn {
     width: 343px;
-    
+    margin-bottom: 14px;
     padding-top: 16px;
     padding-bottom: 16px;
     line-height: 1.4;
@@ -144,9 +165,27 @@
 
     @media (min-width: $tablet){
         width: 169px;
+        margin-bottom: 32px;
     }
 }
 
+.tours__price {
+    display: none;
+
+    @media (min-width: $desktop) {
+        display: flex;
+        gap: 72px;
+        font-family: var(--second-font);
+        font-size: 32px;
+        line-height: 1.4;
+        letter-spacing: 0.32px;
+    }
+}
+
+.tour__buy {
+    display: flex;
+    gap: 40px;
+}
 
 
 

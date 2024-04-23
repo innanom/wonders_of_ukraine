@@ -327,12 +327,19 @@ button {
   width: 375px;
   height: 515px;
   margin-bottom: 16px;
+  border-radius: 4px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (min-width: 835px) {
   .ourTours__img {
     width: 835px;
+  }
+}
+@media (min-width: 1440px) {
+  .ourTours__img {
+    width: 704px;
+    margin-bottom: 106px;
   }
 }
 
@@ -353,6 +360,7 @@ button {
 
 .tour {
   margin: auto;
+  width: 100%;
 }
 
 @media (min-width: 835px) {
@@ -362,6 +370,12 @@ button {
     display: flex;
     gap: 32px;
     margin-bottom: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .tour__subscribe {
+    display: block;
+    margin-bottom: 50px;
   }
 }
 
@@ -376,7 +390,13 @@ button {
 @media (min-width: 835px) {
   .ourTours__text {
     width: 496px;
+    padding-right: 32px;
     padding: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .ourTours__text {
+    margin-bottom: 40px;
   }
 }
 
@@ -410,6 +430,11 @@ button {
   line-height: 1.4;
   letter-spacing: 0.18px;
 }
+@media (min-width: 835px) {
+  .ourTours__includ {
+    margin-top: 32px;
+  }
+}
 
 .ourTours__includ-list {
   margin-bottom: 34px;
@@ -439,6 +464,7 @@ button {
 
 .ourTours__btn {
   width: 343px;
+  margin-bottom: 14px;
   padding-top: 16px;
   padding-bottom: 16px;
   line-height: 1.4;
@@ -450,7 +476,31 @@ button {
 @media (min-width: 835px) {
   .ourTours__btn {
     width: 169px;
+    margin-bottom: 32px;
   }
+}
+
+.tours__price {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .tours__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 72px;
+    font-family: var(--second-font);
+    font-size: 32px;
+    line-height: 1.4;
+    letter-spacing: 0.32px;
+  }
+}
+
+.tour__buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
 }
 
 .gallery {
@@ -507,19 +557,6 @@ button {
   display: none;
 }
 
-.swiper .swiper-button-prev {
-  left: 0;
-}
-
-.swiper .swiper-button-next {
-  right: 0;
-}
-@media (min-width: 1440px) {
-  .swiper .swiper-button-next {
-    right: 16px;
-  }
-}
-
 .swiper .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
@@ -544,6 +581,24 @@ button {
           transform: none;
 }
 
+.swiper .swiper-button-prev {
+  left: 0;
+}
+@media (min-width: 835px) {
+  .swiper .swiper-button-prev {
+    left: 32px;
+  }
+}
+
+.swiper .swiper-button-next {
+  right: 0;
+}
+@media (min-width: 835px) {
+  .swiper .swiper-button-next {
+    right: 32px;
+  }
+}
+
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
   top: auto;
@@ -554,6 +609,13 @@ button {
   .swiper .swiper-button-next,
   .swiper .swiper-button-prev {
     width: 144px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .swiper .ourTours-button-next,
+  .swiper .ourTours-button-prev {
+    top: var(--swiper-navigation-top-offset, 45%);
   }
 }
 

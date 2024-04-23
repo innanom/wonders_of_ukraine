@@ -57,15 +57,9 @@
     display: none;
 }
 
-.swiper .swiper-button-prev {
-    left: 0;
-}
-.swiper .swiper-button-next {
-    right: 0;
-    @media (min-width: $desktop) {
-        right: 16px;
-    }
-}
+
+
+
 
 .swiper .swiper-pagination-bullet {
     width: 10px;
@@ -91,6 +85,23 @@
     transform: none; 
     
 }
+
+.swiper .swiper-button-prev {
+    left: 0;
+    @media (min-width: $tablet) {
+            left: 32px;
+            
+    }
+}
+
+.swiper .swiper-button-next {
+    right: 0;
+
+    @media (min-width: $tablet) {
+        right: 32px;
+        
+    }
+}
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
     top: auto;
@@ -102,6 +113,16 @@
     }
     
 }
+
+.swiper .ourTours-button-next,
+.swiper .ourTours-button-prev {
+    @media (min-width: $desktop) {
+            top:var(--swiper-navigation-top-offset, 45%);
+            
+        }
+}
+
+
 
 .icon__arrow {
     fill: var(--main-color);
