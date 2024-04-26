@@ -623,6 +623,61 @@ button {
   fill: var(--main-color);
 }
 
+.reviews {
+  padding-bottom: 80px;
+}
+@media (min-width: 835px) {
+  .reviews {
+    padding-bottom: 100px;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 32px;
+  text-align: center;
+  font-family: var(--second-font);
+  font-size: 40px;
+  line-height: 1.4;
+  letter-spacing: 0.4px;
+}
+@media (min-width: 835px) {
+  .reviews__title {
+    margin-bottom: 42px;
+    font-size: 64px;
+    letter-spacing: 0.64px;
+  }
+}
+@media (min-width: 1440px) {
+  .reviews__title {
+    margin-bottom: 64px;
+  }
+}
+
+.reviews__card {
+  padding: 32px;
+  width: 279px;
+  height: 527px;
+  border-radius: 4px;
+  border: 1px solid var(--White, #FFF);
+}
+@media (min-width: 835px) {
+  .reviews__card {
+    width: 256px;
+    height: 696px;
+  }
+}
+.reviews__client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+
+.reviews__img {
+  border-radius: 80px;
+  background: url(<path-to-image>) lightgray 50%/cover no-repeat;
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
