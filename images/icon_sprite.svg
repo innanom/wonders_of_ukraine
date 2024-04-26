@@ -55,5 +55,7 @@
 <symbol id="icon-menu" viewBox="0 0 32 32">
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6" d="M6.666 22.667h10.667M6.666 16h18.667M14.666 9.333h10.667"></path>
 </symbol>
+<symbol id="icon-Star" viewBox="0 0 35 32"><path fill="#ae990b" d="m17.455 0 4.617 11.1 11.984.961-9.13 7.821 2.789 11.694-10.259-6.266-10.26 6.266 2.789-11.694-9.13-7.821 11.983-.961L17.455 0z" style="fill:var(--color1, #ae990b)"/>
+</symbol>
 </defs>
 </svg>
