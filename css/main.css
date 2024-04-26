@@ -758,6 +758,10 @@ button {
   }
 }
 
+.logo-img {
+  fill: white;
+}
+
 .footer__list,
 .contacts {
   display: -webkit-box;

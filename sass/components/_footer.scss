@@ -16,7 +16,7 @@
 .footer__logo-img {
     width: 127px;
     margin-bottom: 32px;
-
+  
     @media (min-width: $tablet) {
         width: 169px;
         margin-right: 148px;
@@ -28,6 +28,9 @@
         margin-right: 340px;
        
     }
+}
+.logo-img {
+    fill: white;
 }
 
 .footer__list,
