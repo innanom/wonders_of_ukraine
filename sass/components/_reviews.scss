@@ -1,5 +1,6 @@
 .reviews {
     padding-bottom: 80px;
+    min-height: 100%;
 
     @media (min-width: $tablet) {
         padding-bottom: 100px;
@@ -25,18 +26,22 @@
     }
 }
 
+.swiper-wrapper-reviews {
+    padding-bottom: 64px;
+}
+
 .reviews__card {
     padding: 32px;
     width: 279px;
-    // height: 527px;
+    height: 288px;
+    
 
     border-radius: 4px;
     border: 1px solid var(--White, #FFF);
 
     @media (min-width: $tablet) {
         width: 256px;
-        // height: 696px;
-    }
+        }
         
     @media (min-width: $desktop) {
             
@@ -81,6 +86,11 @@
 }
 
 .star__item {
+    width: 24px;
+    height: 24px;
+}
+
+.star__item-svg {
     width: 24px;
     height: 24px;
 }

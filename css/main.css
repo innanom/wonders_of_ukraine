@@ -625,6 +625,7 @@ button {
 
 .reviews {
   padding-bottom: 80px;
+  min-height: 100%;
 }
 @media (min-width: 835px) {
   .reviews {
@@ -653,9 +654,14 @@ button {
   }
 }
 
+.swiper-wrapper-reviews {
+  padding-bottom: 64px;
+}
+
 .reviews__card {
   padding: 32px;
   width: 279px;
+  height: 288px;
   border-radius: 4px;
   border: 1px solid var(--White, #FFF);
 }
@@ -699,6 +705,11 @@ button {
 }
 
 .star__item {
+  width: 24px;
+  height: 24px;
+}
+
+.star__item-svg {
   width: 24px;
   height: 24px;
 }

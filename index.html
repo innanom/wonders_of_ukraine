@@ -385,8 +385,9 @@
     <!-- Reviews -->
     <section class="reviews container">
         <h2 class="reviews__title">Reviews</h2>
-        <div class="swiper swiper-container">
-            <div class="swiper-wrapper">
+        <div class="swiper">
+            <div class="swiper-wrapper swiper-wrapper-reviews">
+                <!-- Dmitro -->
                 <div class="swiper-slide">
                     <div class="reviews__card">
                         <div class="reviews__client">
@@ -395,7 +396,7 @@
                             /images/reviewes/Dmitro/Dmitro-@1x.jpg 1x, 
                             /images/reviewes/Dmitro/Dmitro-@2x.jpg 2x, 
                             /images/reviewes/Dmitro/Dmitro-@3x.jpg 3x" 
-                            src="/images/reviewes/Dmitro/Dmitro-@3x.png"
+                            src="/images/reviewes/Dmitro/Dmitro-@3x.jpg"
                             alt="Dmitro"
                             width="80"
                             height="80">
@@ -403,7 +404,7 @@
                                 <p class="reviews__client-name">Dmitro</p>
                                 <ul class="star__list">
                                     <li class="star__item">
-                                        <svg>
+                                        <svg class="star__item-svg">
                                             <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
                                         </svg>
                                     </li>
@@ -434,6 +435,7 @@
                         
                     </div>
                 </div>
+                <!-- Alisa -->
                 <div class="swiper-slide">
                     <div class="reviews__card">
                         <div class="reviews__client">
@@ -444,7 +446,7 @@
                                 src="/images/reviewes/Dmitro/Dmitro-@3x.png"
                                 alt="Alisa" width="80" height="80">
                             <div>
-                                <p class="reviews__client-name">Dmitro</p>
+                                <p class="reviews__client-name">Alisa</p>
                                 <ul class="star__list">
                                     <li class="star__item">
                                         <svg>
@@ -480,93 +482,95 @@
                                 
                     </div>
                 </div>
+                <!-- Marry -->
                 <div class="swiper-slide">
-                                    <div class="reviews__card">
-                                        <div class="reviews__client">
-                                            <img class="reviews__img" srcset="
-                                                            /images/reviewes/Dmitro/Dmitro-@1x.jpg 1x, 
-                                                            /images/reviewes/Dmitro/Dmitro-@2x.jpg 2x, 
-                                                            /images/reviewes/Dmitro/Dmitro-@3x.jpg 3x" src="/images/reviewes/Dmitro/Dmitro-@3x.png"
-                                                alt="Dmitro" width="80" height="80">
-                                            <div>
-                                                <p class="reviews__client-name">Dmitro</p>
-                                                <ul class="star__list">
-                                                    <li class="star__item">
-                                                        <svg>
-                                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
-                                                        </svg>
-                                                    </li>
-                                                    <li class="star__item">
-                                                        <svg>
-                                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
-                                                        </svg>
-                                                    </li>
-                                                    <li class="star__item">
-                                                        <svg>
-                                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
-                                                        </svg>
-                                                    </li>
-                                                    <li class="star__item">
-                                                        <svg>
-                                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
-                                                        </svg>
-                                                    </li>
-                                                    <li class="star__item">
-                                                        <svg>
-                                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
-                                                        </svg>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <p class="reviews__card-text">It was an incredible trip and I am very grateful to the organizers for the
-                                            opportunity to learn more about our country</p>
-                                
-                                    </div>
+                    <div class="reviews__card">
+                        <div class="reviews__client">
+                            <img class="reviews__img" srcset="
+                                /images/reviewes/Marry/Marry-@1x.jpg 1x, 
+                                /images/reviewes/Marry/Marry-@2x.jpg 2x, 
+                                /images/reviewes/Marry/Marry-@3x.jpg 3x" src="/images/reviewes/Marry/Marry-@3x.png"
+                                alt="Marry" width="80" height="80">
+                            <div>
+                                <p class="reviews__client-name">Marry</p>
+                                <ul class="star__list">
+                                    <li class="star__item">
+                                        <svg>
+                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="star__item">
+                                        <svg>
+                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="star__item">
+                                        <svg>
+                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="star__item">
+                                        <svg>
+                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="star__item">
+                                        <svg>
+                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <p class="reviews__card-text">Great tour. I really liked the atmosphere, professional approach and very interesting information</p>
+
                 </div>
+                
+            </div>
+                <!-- Fedir -->
                 <div class="swiper-slide">
-                                    <div class="reviews__card">
-                                        <div class="reviews__client">
-                                            <img class="reviews__img" srcset="
-                                                            /images/reviewes/Dmitro/Dmitro-@1x.jpg 1x, 
-                                                            /images/reviewes/Dmitro/Dmitro-@2x.jpg 2x, 
-                                                            /images/reviewes/Dmitro/Dmitro-@3x.jpg 3x" src="/images/reviewes/Dmitro/Dmitro-@3x.png"
-                                                alt="Dmitro" width="80" height="80">
-                                            <div>
-                                                <p class="reviews__client-name">Dmitro</p>
-                                                <ul class="star__list">
-                                                    <li class="star__item">
-                                                        <svg>
-                                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
-                                                        </svg>
-                                                    </li>
-                                                    <li class="star__item">
-                                                        <svg>
-                                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
-                                                        </svg>
-                                                    </li>
-                                                    <li class="star__item">
-                                                        <svg>
-                                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
-                                                        </svg>
-                                                    </li>
-                                                    <li class="star__item">
-                                                        <svg>
-                                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
-                                                        </svg>
-                                                    </li>
-                                                    <li class="star__item">
-                                                        <svg>
-                                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
-                                                        </svg>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <p class="reviews__card-text">It was an incredible trip and I am very grateful to the organizers for the
-                                            opportunity to learn more about our country</p>
-                                
-                                    </div>
+                    <div class="reviews__card">
+                        <div class="reviews__client">
+                            <img class="reviews__img" srcset="
+                                /images/reviewes/Fedir/Fedir-@1x.jpg 1x, 
+                                /images/reviewes/Fedir/Fedir-@2x.jpg 2x, 
+                                /images/reviewes/Fedir/Fedir-@3x.jpg 3x" src="/images/reviewes/Fedir/Fedir-@3x.png"
+                                alt="Fedir" width="80" height="80">
+                            <div>
+                                <p class="reviews__client-name">Fedir</p>
+                                <ul class="star__list">
+                                    <li class="star__item">
+                                        <svg>
+                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="star__item">
+                                        <svg>
+                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="star__item">
+                                        <svg>
+                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="star__item">
+                                        <svg>
+                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="star__item">
+                                        <svg>
+                                            <use href="./images/icon_sprite.svg#icon-Star" width="24" height="24"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="reviews__card-text">We traveled with a company and it was incredible, everyone without exception was satisfied and we will definitely go
+                        somewhere else with you and will recommend it to everyone</p>
+                    </div>
                 </div>
                 <div class="swiper-slide">
                                                     <div class="reviews__card">

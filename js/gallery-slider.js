@@ -23,7 +23,7 @@ const swiper = new Swiper('.swiper', {
   // Відступ між слайдами
   spaceBetween: 16,
 
-  autoHeight: true,
+  // autoHeight: true,
 
   breakpoints: {
     // when window width is >= 320px
