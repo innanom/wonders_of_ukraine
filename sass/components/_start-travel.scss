@@ -1,0 +1,51 @@
+// .startTravel {
+//     background-image: url("/images/startTravel-img.jpg");
+    
+// }
+
+
+
+.startTravel__info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    margin-bottom: 32px;
+
+    line-height: 1.40;
+    letter-spacing: 0.16px;
+}
+
+.startTravel__title {
+    font-family: var(--second-font);
+    font-size: 32px;
+    line-height: 1.40;
+    letter-spacing: 0.32px;
+}
+
+.startTravel__form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    font-family: var(--second-font);
+    font-size: 18px;
+
+    line-height: 1.4;
+    letter-spacing: 0.18px;
+}
+.startTravel__form-input {
+    display: flex;
+    padding: 14px 12px;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+.startTravel__form-input::placeholder {
+    line-height: 1.40;
+    letter-spacing: 0.16px;
+}
+
+
+
+

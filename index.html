@@ -772,20 +772,24 @@
     </section>
 
     <!-- Start travel -->
-    <section class="startTravel" id="startTravel">
-        <img src="./images/startTravel-img.jpg" alt="dry grass">
+    <section class="startTravel container" id="startTravel">
+        <!-- <img src="./images/startTravel-img.jpg" alt="dry grass"> -->
         <div>
-        <h2 class="startTravel__title">Start travel</h2>
-        <p class="startTravel_text">If you want to get an unforgettable trip, quickly fill out the application and we will contact you during the day</p>
-        <p class="startTravel_text">We are ready to answer any questions and help choose the best tour class="startTravel_text"</p>
-        <form>
-            <label for="">
-                <input type="text">
+            <div class="startTravel__info">
+                <h2 class="startTravel__title">Start travel</h2>
+                <p class="startTravel_text-1">If you want to get an unforgettable trip, quickly fill out the application and we will contact you during the day</p>
+                <p class="startTravel_text-2">We are ready to answer any questions and help choose the best tour</p>
+            </div>
+        <form class="startTravel__form">
+            <label>
+                Name
+                <input class="startTravel__form-input" type="text" name="username" placeholder="Enter your name" pattern="[A-Za-z]{2,}" required>
             </label>
-            <label for="">
-                <input type="text">
+            <label>
+                Phone
+                <input class="startTravel__form-input" type="tel" name="phone_number" placeholder="+380__-___-__-__" pattern="+380-[0-9]{3}-[0-9]{2}-[0-9]{2}" required> 
             </label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="" id=""  rows="10" placeholder="Your message" required></textarea>
             <button type="submit">Send</button>
         </form>
         </div>
