@@ -2,6 +2,7 @@
   --main-color: #FFFFFF;
   --background-color: #141A19;
   --btn-color: #394014;
+  --input-color:#B9B9B9;
   /* Fonts */
   --main-font: Lato;
   --second-font: Jomolhari;
@@ -853,7 +854,7 @@ button {
   letter-spacing: 0.18px;
 }
 
-.startTravel__form-input {
+.form__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -866,27 +867,74 @@ button {
       align-self: stretch;
 }
 
-.startTravel__form-input::-webkit-input-placeholder {
+.form__input::-webkit-input-placeholder {
   line-height: 1.4;
   letter-spacing: 0.16px;
 }
 
-.startTravel__form-input::-moz-placeholder {
+.form__input::-moz-placeholder {
   line-height: 1.4;
   letter-spacing: 0.16px;
 }
 
-.startTravel__form-input:-ms-input-placeholder {
+.form__input:-ms-input-placeholder {
   line-height: 1.4;
   letter-spacing: 0.16px;
 }
 
-.startTravel__form-input::-ms-input-placeholder {
+.form__input::-ms-input-placeholder {
   line-height: 1.4;
   letter-spacing: 0.16px;
 }
 
-.startTravel__form-input::placeholder {
+.form__input::placeholder {
+  line-height: 1.4;
+  letter-spacing: 0.16px;
+}
+
+.form__textarea {
+  width: 100%;
+  height: auto;
+  padding: 14px 12px;
+  border: 1px solid var(--main-color);
+}
+
+.form__textarea::-webkit-input-placeholder {
+  color: var(--input-color);
+  line-height: 1.4;
+  letter-spacing: 0.16px;
+}
+
+.form__textarea::-moz-placeholder {
+  color: var(--input-color);
+  line-height: 1.4;
+  letter-spacing: 0.16px;
+}
+
+.form__textarea:-ms-input-placeholder {
+  color: var(--input-color);
+  line-height: 1.4;
+  letter-spacing: 0.16px;
+}
+
+.form__textarea::-ms-input-placeholder {
+  color: var(--input-color);
+  line-height: 1.4;
+  letter-spacing: 0.16px;
+}
+
+.form__textarea::placeholder {
+  color: var(--input-color);
+  line-height: 1.4;
+  letter-spacing: 0.16px;
+}
+
+.form__btn {
+  width: 100%;
+  padding: 16px 52px;
+  background: var(--btn-color);
+  color: var(--main-color);
+  font-family: var(--second-font);
   line-height: 1.4;
   letter-spacing: 0.16px;
 }

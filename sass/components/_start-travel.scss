@@ -34,15 +34,42 @@
     line-height: 1.4;
     letter-spacing: 0.18px;
 }
-.startTravel__form-input {
+.form__input {
     display: flex;
     padding: 14px 12px;
     align-items: flex-start;
     gap: 8px;
     align-self: stretch;
+
+    
 }
-.startTravel__form-input::placeholder {
+.form__input::placeholder {
     line-height: 1.40;
+    letter-spacing: 0.16px;
+}
+
+.form__textarea{
+    width: 100%;
+    height: auto;
+    padding: 14px 12px;
+
+    border: 1px solid var(--main-color);
+}
+
+.form__textarea::placeholder {
+    color: var(--input-color);
+     line-height: 1.40;
+    letter-spacing: 0.16px;
+}
+.form__btn {
+    width: 100%;
+    padding: 16px 52px;
+
+    background: var(--btn-color);
+
+    color: var(--main-color);
+    font-family: var(--second-font);
+    line-height: 1.4;
     letter-spacing: 0.16px;
 }
 
