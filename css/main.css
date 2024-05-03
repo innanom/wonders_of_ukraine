@@ -818,6 +818,36 @@ button {
   background: var(--background-color);
 }
 
+.startTravel {
+  padding-bottom: 96px;
+}
+@media (min-width: 835px) {
+  .startTravel {
+    padding-bottom: 100px;
+  }
+}
+
+.startTravel__block {
+  background-color: var(--background-color);
+}
+@media (min-width: 835px) {
+  .startTravel__block {
+    width: 770px;
+    padding: 69px 49px;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 4px;
+    border: 1px solid var(--main-color);
+  }
+}
+@media (min-width: 1440px) {
+  .startTravel__block {
+    width: 1032px;
+    padding: 96px 180px;
+  }
+}
+
 .startTravel__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -848,7 +878,6 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 12px;
-  font-family: var(--second-font);
   font-size: 18px;
   line-height: 1.4;
   letter-spacing: 0.18px;
@@ -859,12 +888,15 @@ button {
   display: -ms-flexbox;
   display: flex;
   padding: 14px 12px;
+  width: 100%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 8px;
   -ms-flex-item-align: stretch;
       align-self: stretch;
+  background-color: var(--background-color);
+  border: 1px solid var(--main-color);
 }
 
 .form__input::-webkit-input-placeholder {
@@ -894,8 +926,9 @@ button {
 
 .form__textarea {
   width: 100%;
-  height: auto;
+  height: 102px;
   padding: 14px 12px;
+  background-color: var(--background-color);
   border: 1px solid var(--main-color);
 }
 
