@@ -309,6 +309,7 @@ button {
 
 .ourTours {
   width: 100%;
+  min-height: 100%;
   padding-bottom: 80px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -631,6 +632,12 @@ button {
 @media (min-width: 835px) {
   .reviews {
     padding-bottom: 100px;
+    padding-right: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .reviews {
+    padding-right: 32px;
   }
 }
 
@@ -661,7 +668,7 @@ button {
 
 .reviews__card {
   padding: 32px;
-  width: 279px;
+  width: 277px;
   height: 279px;
   border-radius: 4px;
   border: 1px solid var(--White, #FFF);
